@@ -40,6 +40,47 @@ Ronan`,
 -Thanks,
 Ronan`,
 
+`I'm glad we were able to take care of that today.  Please don't hesitate to reach out for anything else, and I wish you a great rest of your day in the meantime!
+
+-Thanks,
+Ronan`,
+
+`I'm glad we were able to take care of that today.  Please don't hesitate to reach out for anything else, and I wish you a great rest of your evening in the meantime!
+
+-Thanks,
+Ronan`,
+
+`Thanks for chatting in today to look into the verification status for account ().  I'm glad we were able to take care of that today.  Please don't hesitate to reach out for anything else, and I wish you a great rest of your day in the meantime!
+
+-Thanks,
+Ronan`,
+
+`Thanks for chatting in today to look into the verification status for account ().  I'm glad we were able to take care of that today.  Please don't hesitate to reach out for anything else, and I wish you a great rest of your evening in the meantime!
+
+-Thanks,
+Ronan`,
+
+`As promised, I have already reached out to my specialized colleagues who will be able to help further, and rest assured, we will reach back out here through email as soon as we can with an update.  Wishing you a great rest of your day in the meantime!
+
+-Thanks,
+Ronan`,
+
+`As promised, I have already reached out to my specialized colleagues who will be able to help further, and rest assured, we will reach back out here through email as soon as we can with an update.  Wishing you a great rest of your evening in the meantime!
+
+-Thanks,
+Ronan`,
+
+`With that said, I will be submitting your use-case and request as feedback to our engineers to see if this is something they can work on for the future.  User feedback is something we take very seriously and has often played a major role in what features or services we work on next, so thank you for bringing this to our attention today.  Please don't hesitate to let us know if we can help in any other way, and I wish you a great rest of your day in the meantime!
+
+-Thanks,
+Ronan`,
+
+`With that said, I will be submitting your use-case and request as feedback to our engineers to see if this is something they can work on for the future.  User feedback is something we take very seriously and has often played a major role in what features or services we work on next, so thank you for bringing this to our attention today.  Please don't hesitate to let us know if we can help in any other way, and I wish you a great rest of your evening in the meantime!
+
+-Thanks,
+Ronan`,
+
+
 ]
 
 
@@ -50,11 +91,12 @@ class App extends React.Component {
     super(props);
 
 this.state= {
-  thingtobecopied: ""
+  thingtobecopied: "",
+  inputtext: ""
 }
 
 this.handleType=this.handleType.bind(this)
-
+this.handleClear=this.handleClear.bind(this)
   }
 
 
@@ -100,7 +142,54 @@ this.setState ({
 thingtobecopied: answers[7]
 })
 break;
+case "glad day": 
+this.setState ({
+thingtobecopied: answers[8]
+})
+break;
+case "glad night": 
+this.setState ({
+thingtobecopied: answers[9]
+})
+break;
+case "ver day": 
+this.setState ({
+thingtobecopied: answers[10]
+})
+break;
+case "ver night": 
+this.setState ({
+thingtobecopied: answers[11]
+})
+break;
+case "esc day": 
+this.setState ({
+thingtobecopied: answers[12]
+})
+break;
+case "esc night": 
+this.setState ({
+thingtobecopied: answers[13]
+})
+break;
+case "feed day": 
+this.setState ({
+thingtobecopied: answers[14]
+})
+break;
+case "feed night": 
+this.setState ({
+thingtobecopied: answers[15]
+})
+break;
 }  
+}
+
+handleClear() {
+  this.setState ({
+    thingtobecopied: "",
+    inputtext: ""
+  })
 }
 
   render() {
@@ -108,14 +197,15 @@ break;
     
       navigator.clipboard.writeText(this.state.thingtobecopied)
       navigator.clipboard.readText().then(
-      clipText => document.querySelector("#changeme").innerText = clipText).then
+      clipText => document.querySelector("#changeme").innerText = clipText)
+      
       return (
         <div>
           <div id="container">
       <h3 id="changeme"></h3>
       <h3 id="keyword-label">Enter keywords here!</h3>
       <input id="input" type="text" onChange={this.handleType}></input>
-      
+      <button id="clear" onClick={this.handleClear}>CLEAR</button>
 </div>
 </div>
     )
