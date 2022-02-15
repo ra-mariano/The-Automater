@@ -80,7 +80,16 @@ Ronan`,
 -Thanks,
 Ronan`,
 
+`It looks like you may have already stepped away, so I will just need to close the chat for now, but I will go ahead and follow up over email to continue assisting further.  Bye for now!`,
 
+
+`It looks like you may have already stepped away, so I will just need to close the chat for now, but I will go ahead and follow up over email in case you need further assistance.  Bye for now!`,
+
+`It looks like you may have already stepped away, so I will just need to close the chat for now, but feel free to chat back in when ready!`,
+
+`User asking to confirm the last 4 digits of an EIN for their connect account`,
+
+`User unsure what was needed to verify a connect account`
 ]
 
 
@@ -182,6 +191,31 @@ this.setState ({
 thingtobecopied: answers[15]
 })
 break;
+case "step 1": 
+this.setState ({
+thingtobecopied: answers[16]
+})
+break;
+case "step 2": 
+this.setState ({
+thingtobecopied: answers[17]
+})
+break;
+case "step 3": 
+this.setState ({
+thingtobecopied: answers[18]
+})
+break;
+case "t last 4": 
+this.setState ({
+thingtobecopied: answers[19]
+})
+break;
+case "t unsure": 
+this.setState ({
+thingtobecopied: answers[20]
+})
+break;
 }  
 }
 
@@ -202,10 +236,12 @@ handleClear() {
       return (
         <div>
           <div id="container">
+      <div id="inputform">
       <h3 id="changeme"></h3>
       <h3 id="keyword-label">Enter keywords here!</h3>
       <input id="input" type="text" onChange={this.handleType}></input>
       <button id="clear" onClick={this.handleClear}>CLEAR</button>
+      </div>
 </div>
 </div>
     )
