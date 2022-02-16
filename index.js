@@ -113,6 +113,12 @@ Reason for going away: Hickory then Break`,
 TL Name: Scott Joseph
 Channel: Chat
 Ticket Link:
+Reason for going away: Late Break`,
+
+`AwayStatus
+TL Name: Scott Joseph
+Channel: Chat
+Ticket Link:
 Reason for going away: Finishing chats then Break`,
 
 `AwayStatus
@@ -126,6 +132,18 @@ TL Name: Scott Joseph
 Channel: Chat
 Ticket Link:
 Reason for going away: Lunch`,
+
+`AwayStatus
+TL Name: Scott Joseph
+Channel: Chat
+Ticket Link:
+Reason for going away: Late Lunch`,
+
+`AwayStatus
+TL Name: Scott Joseph
+Channel: Chat
+Ticket Link:
+Reason for going away: 1 on 1 with TL`,
 
 `AwayStatus
 TL Name: Scott Joseph
@@ -278,6 +296,46 @@ this.setState ({
 thingtobecopied: answers[24]
 })
 break;
+case "shb": 
+this.setState ({
+thingtobecopied: answers[25]
+})
+break;
+case "slb": 
+this.setState ({
+thingtobecopied: answers[26]
+})
+break;
+case "scb": 
+this.setState ({
+thingtobecopied: answers[27]
+})
+break;
+case "scl": 
+this.setState ({
+thingtobecopied: answers[28]
+})
+break;
+case "sl": 
+this.setState ({
+thingtobecopied: answers[29]
+})
+break;
+case "sll": 
+this.setState ({
+thingtobecopied: answers[30]
+})
+break;
+case "s1": 
+this.setState ({
+thingtobecopied: answers[31]
+})
+break;
+case "se": 
+this.setState ({
+thingtobecopied: answers[32]
+})
+break;
 }  
 }
 
@@ -290,6 +348,7 @@ handleClear() {
     inputtext: ""
   })
   document.getElementById("input").value= ""
+  document.getElementById("input").focus();
 }
 
   render() {
@@ -298,6 +357,9 @@ handleClear() {
       navigator.clipboard.writeText(this.state.thingtobecopied)
       navigator.clipboard.readText().then(
       clipText => document.querySelector("#changeme").innerText = clipText)
+      window.onload = function focuser() {
+        document.getElementById("input").focus();
+      }
       
       return (
         <div>
