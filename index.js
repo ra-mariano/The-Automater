@@ -89,7 +89,50 @@ Ronan`,
 
 `User asking to confirm the last 4 digits of an EIN for their connect account`,
 
-`User unsure what was needed to verify a connect account`
+`User unsure what was needed to verify a connect account`,
+
+`User requested a Connect account be unverified`,
+
+`Thanks for chatting in today to request account () be unverified to allow you to make some changes.  I'm glad we were able to take care of that today.  Please don't hesitate to reach out for anything else, and I wish you a great rest of your day in the meantime!`,
+
+`Thanks for chatting in today to request account () be unverified to allow you to make some changes.  I'm glad we were able to take care of that today.  Please don't hesitate to reach out for anything else, and I wish you a great rest of your evening in the meantime!`,
+
+`AwayStatus
+TL Name: Scott Joseph
+Channel: Chat
+Ticket Link:
+Reason for going away: Break`,
+
+`AwayStatus
+TL Name: Scott Joseph
+Channel: Chat
+Ticket Link:
+Reason for going away: Hickory then Break`,
+
+`AwayStatus
+TL Name: Scott Joseph
+Channel: Chat
+Ticket Link:
+Reason for going away: Finishing chats then Break`,
+
+`AwayStatus
+TL Name: Scott Joseph
+Channel: Chat
+Ticket Link:
+Reason for going away: Finishing chats then Lunch`,
+
+`AwayStatus
+TL Name: Scott Joseph
+Channel: Chat
+Ticket Link:
+Reason for going away: Lunch`,
+
+`AwayStatus
+TL Name: Scott Joseph
+Channel: Chat
+Ticket Link:
+Reason for going away: Finishing chats, followups, EOD`,
+
 ]
 
 
@@ -100,8 +143,7 @@ class App extends React.Component {
     super(props);
 
 this.state= {
-  thingtobecopied: "",
-  inputtext: ""
+  thingtobecopied: ""
 }
 
 this.handleType=this.handleType.bind(this)
@@ -216,14 +258,38 @@ this.setState ({
 thingtobecopied: answers[20]
 })
 break;
+case "t unver": 
+this.setState ({
+thingtobecopied: answers[21]
+})
+break;
+case "unver day": 
+this.setState ({
+thingtobecopied: answers[22]
+})
+break;
+case "unver night": 
+this.setState ({
+thingtobecopied: answers[23]
+})
+break;
+case "sb": 
+this.setState ({
+thingtobecopied: answers[24]
+})
+break;
 }  
 }
+
+
+//Away statuses
 
 handleClear() {
   this.setState ({
     thingtobecopied: "",
     inputtext: ""
   })
+  document.getElementById("input").value= ""
 }
 
   render() {
