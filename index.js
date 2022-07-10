@@ -2,86 +2,117 @@
 var answers = [
 `Hope that takes care of everything you needed today, but please don't hesitate to reach back out should you need anything else.  Wishing you a great rest of your day in the meantime!
 
--Thanks,
-Ronan`,
+Thanks,
+Ronan
+
+`,
   
 `Hope that takes care of everything you needed today, but please don't hesitate to reach back out should you need anything else.  Wishing you a great rest of your evening in the meantime!
 
--Thanks,
-Ronan`,
+Thanks,
+Ronan
+
+`,
 
 `Hope that helps guide you forward for now, but please don't hesitate to reach back out should you need further assistance.  Wishing you a great rest of your day in the meantime!
 
--Thanks,
-Ronan`,
+Thanks,
+Ronan
+
+`,
 
 `Hope that helps guide you forward for now, but please don't hesitate to reach back out should you need further assistance.  Wishing you a great rest of your evening in the meantime!
 
--Thanks,
-Ronan`,
+Thanks,
+Ronan
+
+`,
 
 `Hope that helps clarify things a bit further, but please don't hesitate to reach back out should you need further assistance.  Wishing you a great rest of your day in the meantime!
 
--Thanks,
-Ronan`,
+Thanks,
+Ronan
+
+`,
 
 `Hope that helps clarify things a bit further, but please don't hesitate to reach back out should you need further assistance.  Wishing you a great rest of your evening in the meantime!
 
--Thanks,
-Ronan`,
+Thanks,
+Ronan
+
+`,
 
 `Thanks for chatting in today to confirm the last 4 digits of the EIN for account ().  I'm glad we were able to take care of that today.  Please don't hesitate to reach out for anything else, and I wish you a great rest of your day in the meantime!
 
--Thanks,
-Ronan`,
+Thanks,
+Ronan
+
+`,
 
 `Thanks for chatting in today to confirm the last 4 digits of the EIN for account ().  I'm glad we were able to take care of that today.  Please don't hesitate to reach out for anything else, and I wish you a great rest of your evening in the meantime!
 
--Thanks,
-Ronan`,
+Thanks,
+Ronan
+
+`,
 
 `I'm glad we were able to take care of that today.  Please don't hesitate to reach out for anything else, and I wish you a great rest of your day in the meantime!
 
--Thanks,
-Ronan`,
+Thanks,
+Ronan
+
+`,
 
 `I'm glad we were able to take care of that today.  Please don't hesitate to reach out for anything else, and I wish you a great rest of your evening in the meantime!
 
--Thanks,
-Ronan`,
+Thanks,
+Ronan
+
+`,
 
 `Thanks for chatting in today to look into the verification status for account ().  I'm glad we were able to take care of that today.  Please don't hesitate to reach out for anything else, and I wish you a great rest of your day in the meantime!
 
--Thanks,
-Ronan`,
+Thanks,
+Ronan
+
+`,
 
 `Thanks for chatting in today to look into the verification status for account ().  I'm glad we were able to take care of that today.  Please don't hesitate to reach out for anything else, and I wish you a great rest of your evening in the meantime!
 
--Thanks,
-Ronan`,
+Thanks,
+Ronan
+
+`,
 
 `As promised, I have already reached out to my specialized colleagues who will be able to help further, and rest assured, we will reach back out here through email as soon as we can with an update.  Wishing you a great rest of your day in the meantime!
 
--Thanks,
-Ronan`,
+Thanks,
+Ronan
+
+`,
 
 `As promised, I have already reached out to my specialized colleagues who will be able to help further, and rest assured, we will reach back out here through email as soon as we can with an update.  Wishing you a great rest of your evening in the meantime!
 
--Thanks,
-Ronan`,
+Thanks,
+Ronan
+
+`,
 
 `With that said, I will be submitting your use-case and request as feedback to our engineers to see if this is something they can work on for the future.  User feedback is something we take very seriously and has often played a major role in what features or services we work on next, so thank you for bringing this to our attention today.  Please don't hesitate to let us know if we can help in any other way, and I wish you a great rest of your day in the meantime!
 
--Thanks,
-Ronan`,
+Thanks,
+Ronan
+
+`,
 
 `With that said, I will be submitting your use-case and request as feedback to our engineers to see if this is something they can work on for the future.  User feedback is something we take very seriously and has often played a major role in what features or services we work on next, so thank you for bringing this to our attention today.  Please don't hesitate to let us know if we can help in any other way, and I wish you a great rest of your evening in the meantime!
 
--Thanks,
-Ronan`,
+Thanks,
+Ronan
+
+`,
 
 `It looks like you may have already stepped away, so I will just need to close the chat for now, but I will go ahead and follow up over email to continue assisting further.  Bye for now!`,
-
 
 `It looks like you may have already stepped away, so I will just need to close the chat for now, but I will go ahead and follow up over email in case you need further assistance.  Bye for now!`,
 
@@ -93,9 +124,19 @@ Ronan`,
 
 `User requested a Connect account be unverified`,
 
-`Thanks for chatting in today to request account () be unverified to allow you to make some changes.  I'm glad we were able to take care of that today.  Please don't hesitate to reach out for anything else, and I wish you a great rest of your day in the meantime!`,
+`Thanks for chatting in today to request account () be unverified to allow you to make some changes.  I'm glad we were able to take care of that today.  Please don't hesitate to reach out for anything else, and I wish you a great rest of your day in the meantime!
 
-`Thanks for chatting in today to request account () be unverified to allow you to make some changes.  I'm glad we were able to take care of that today.  Please don't hesitate to reach out for anything else, and I wish you a great rest of your evening in the meantime!`,
+Thanks,
+Ronan
+
+`,
+
+`Thanks for chatting in today to request account () be unverified to allow you to make some changes.  I'm glad we were able to take care of that today.  Please don't hesitate to reach out for anything else, and I wish you a great rest of your evening in the meantime!
+
+Thanks,
+Ronan
+
+`,
 
 `AwayStatus
 TL Name: Scott Joseph
@@ -150,6 +191,12 @@ TL Name: Scott Joseph
 Channel: Chat
 Ticket Link:
 Reason for going away: Finishing chats, followups, EOD`,
+
+`AwayStatus
+TL Name: Scott Joseph
+Channel: Chat
+Ticket Link:
+Reason for going away: Followups, then Break`
 
 ]
 
@@ -336,6 +383,11 @@ this.setState ({
 thingtobecopied: answers[32]
 })
 break;
+case "sfb": 
+this.setState ({
+thingtobecopied: answers[33]
+})
+break;
 }  
 }
 
@@ -353,13 +405,14 @@ handleClear() {
 
   render() {
     
-    
+    function load() {
+      document.getElementById("input").focus();
+    }
+    window.onload = load;
       navigator.clipboard.writeText(this.state.thingtobecopied)
       navigator.clipboard.readText().then(
       clipText => document.querySelector("#changeme").innerText = clipText)
-      window.onload = function focuser() {
-        document.getElementById("input").focus();
-      }
+      
       
       return (
         <div>
