@@ -196,7 +196,39 @@ Reason for going away: Finishing chats, followups, EOD`,
 TL Name: Scott Joseph
 Channel: Chat
 Ticket Link:
-Reason for going away: Followups, then Break`
+Reason for going away: Followups, then Break`,
+
+`AwayStatus
+TL Name: Scott Joseph
+Channel: Chat
+Ticket Link:
+Reason for going away: Followups, then Lunch`,
+
+`AwayStatus
+TL Name: Scott Joseph
+Channel: Chat
+Ticket Link:
+Reason for going away: Finishing chats, followups, then Break`,
+
+`AwayStatus
+TL Name: Scott Joseph
+Channel: Chat
+Ticket Link:
+Reason for going away: Finishing chats, followups, then Lunch`,
+
+`Thanks for chatting in today to request the STAN () for the refund on charge ().  I'm glad we were able to take care of that today.  Please don't hesitate to reach out for anything else, and I wish you a great rest of your evening in the meantime!
+
+Thanks,
+Ronan
+
+`,
+
+`Thanks for chatting in today to request the Trace ID () for payout ().  I'm glad we were able to take care of that today.  Please don't hesitate to reach out for anything else, and I wish you a great rest of your evening in the meantime!
+
+Thanks,
+Ronan
+
+`
 
 ]
 
@@ -386,6 +418,31 @@ break;
 case "sfb": 
 this.setState ({
 thingtobecopied: answers[33]
+})
+break;
+case "sfl": 
+this.setState ({
+thingtobecopied: answers[34]
+})
+break;
+case "scfb": 
+this.setState ({
+thingtobecopied: answers[35]
+})
+break;
+case "scfl": 
+this.setState ({
+thingtobecopied: answers[36]
+})
+break;
+case "stan": 
+this.setState ({
+thingtobecopied: answers[37]
+})
+break;
+case "trace": 
+this.setState ({
+thingtobecopied: answers[38]
 })
 break;
 }  
